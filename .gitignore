@@ -1,24 +1,43 @@
-# Ignorer le dossier test
-test/
-
-
-# Ignorer les fichiers compilés (exécutables)
-a.out
+# Compiled object files
 *.o
+
+# Executable files
+a.out
 *.out
 *.exe
 
-# Ignorer tous les fichiers sans extension (considérés comme exécutables)
-[^.]*
+# Editor/IDE backup or temp files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
 
+# Mac OS
+.DS_Store
 
+# Vim
+*.un~
 
-# Autoriser les fichiers source et README
-!*.c
-!*.h
-!README.md
-# Ignorer uniquement la fonction print (non autorisée dans le repo)
-binary_tree_print.c
+# Cscope and ctags
+cscope.*
+tags
 
-# Ne pas ignorer les dossiers (pour permettre le suivi des fichiers dans les dossiers)
-!*/
+# Generated files
+*.gcda
+*.gcno
+*.gcov
+
+# Project-specific: ignore all main files
+*main.c
+
+# Optional: ignore binaries by name if used
+bubble
+insertion
+select
+quick
+
+# Optional: ignore Valgrind/memcheck output
+valgrind.log
+memcheck.log
