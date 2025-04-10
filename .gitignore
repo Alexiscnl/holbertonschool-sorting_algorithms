@@ -30,7 +30,7 @@ tags
 *.gcov
 
 # Project-specific: ignore all main files
-*main.c
+
 
 # Optional: ignore binaries by name if used
 bubble
